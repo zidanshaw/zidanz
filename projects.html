@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Projects — Zidan</title><link rel="stylesheet" href="assets/css/main.css"></head><body>
+<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a class="active" href="projects.html">Projects</a><a href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main><section class="page-hero"><div class="container"><p class="kicker">Profile</p><h1>My projects.</h1><p>A collection of websites, system experiments, servers, and other things I've built or tested.</p></div></section>
+<section class="content-section"><div class="container"><div class="project-grid">
+<a class="card project-large" href="project-profile.html"><div class="card-media"><img src="images/project-portfolio.jpg" alt="Profile website"><span class="badge">Web</span></div><div class="card-body"><h3>Personal Profile Website</h3><p>HTML, CSS and JavaScript profile UI with responsive design.</p></div></a>
+<a class="card project-large" href="project-linux.html"><div class="card-media"><img src="images/project-linux.jpg" alt="Linux experiments"><span class="badge">Linux</span></div><div class="card-body"><h3>Linux Experiments</h3><p>Distribution testing, terminal work, configuration and system setup.</p></div></a>
+<a class="card project-large" href="project-minecraft.html"><div class="card-media"><img src="images/project-minecraft.jpg" alt="Minecraft Server"><span class="badge">Gaming</span></div><div class="card-body"><h3>Minecraft Server</h3><p>PaperMC, Java, networking and self-hosting experiments.</p></div></a>
+<a class="card project-large" href="project-android.html"><div class="card-media"><img src="images/project-android.jpg" alt="Android Experiments"><span class="badge">Android</span></div><div class="card-body"><h3>Android Experiments</h3><p>Launcher tuning, Android customization and mobile testing.</p></div></a>
+<a class="card project-large" href="project-dualboot.html"><div class="card-media"><img src="images/project-dualboot.jpg" alt="Dual Boot Setup"><span class="badge">Systems</span></div><div class="card-body"><h3>Dual Boot Setup</h3><p>Windows and Linux partitioning experiments.</p></div></a>
+</div></div></section></main>
+<footer id="contact"><div class="container"><h2>Zidan</h2><p>More projects coming as I build them.</p><p>GitHub: github.com/zidan</p><p>© Zidan</p></div></footer><script>window.addEventListener('scroll',()=>document.getElementById('topbar').classList.toggle('scrolled',scrollY>30));</script><script>
+(function(){
+  document.body.classList.add('page-ready');
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var href=a.getAttribute('href');
+    if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || a.target==='_blank') return;
+    a.addEventListener('click',function(e){
+      if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey) return;
+      e.preventDefault();
+      document.body.classList.remove('page-ready');
+      document.body.classList.add('page-exit');
+      setTimeout(function(){ window.location.href=href; },380);
+    });
+  });
+})();
+</script>
+</body></html>

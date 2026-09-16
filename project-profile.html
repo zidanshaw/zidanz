@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Personal Profile Website — Zidan</title><link rel="stylesheet" href="assets/css/main.css"></head><body>
+<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a class="active" href="projects.html">Projects</a><a href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a></nav></div></header>
+<main><section class="page-hero" style="background-image:linear-gradient(180deg,rgba(8,8,8,.3),#080808),url('images/project-portfolio.jpg')"><div class="container"><p class="kicker">Project</p><h1>Personal Profile Website</h1><p>HTML, CSS and JavaScript profile UI with responsive design.</p></div></section>
+<section class="content-section"><div class="container"><div class="split"><div class="panel"><h2>Overview</h2><p>A personal profile site built from scratch with plain HTML, CSS and a bit of JavaScript — no framework. Focused on a clean, Netflix-inspired layout, responsive breakpoints for tablet and mobile, smooth page transitions between sections, and a card-based project showcase like the one you're looking at right now.</p></div><div class="panel"><img src="images/project-portfolio.jpg" alt="Personal Profile Website" style="width:100%;border-radius:6px;display:block"></div></div><div class="actions" style="margin-top:26px"><a class="btn btn-dark" href="projects.html">← Back to Projects</a></div></div></section></main>
+<footer id="contact"><div class="container"><h2>Zidan</h2><p>More projects coming as I build them.</p><p>GitHub: github.com/zidan</p><p>© Zidan</p></div></footer><script>window.addEventListener('scroll',()=>document.getElementById('topbar').classList.toggle('scrolled',scrollY>30));</script><script>
+(function(){
+  document.body.classList.add('page-ready');
+  document.querySelectorAll('a[href]').forEach(function(a){
+    var href=a.getAttribute('href');
+    if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || a.target==='_blank') return;
+    a.addEventListener('click',function(e){
+      if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey) return;
+      e.preventDefault();
+      document.body.classList.remove('page-ready');
+      document.body.classList.add('page-exit');
+      setTimeout(function(){ window.location.href=href; },380);
+    });
+  });
+})();
+</script>
+</body></html>
