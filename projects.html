@@ -1,5 +1,7 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Projects — Zidan</title><link rel="stylesheet" href="assets/css/main.css"></head><body>
-<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a class="active" href="projects.html">Projects</a><a href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a></nav></div></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Projects — Zidan</title><link rel="stylesheet" href="assets/css/main.css"><meta name="description" content="A look at Zidan's projects: web development, Linux experiments, self-hosted servers, Android tinkering and more."><meta property="og:type" content="website"><meta property="og:title" content="Projects — Zidan"><meta property="og:description" content="A look at Zidan's projects: web development, Linux experiments, self-hosted servers, Android tinkering and more."><meta property="og:image" content="images/profile.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Projects — Zidan"><meta name="twitter:description" content="A look at Zidan's projects: web development, Linux experiments, self-hosted servers, Android tinkering and more."><meta name="twitter:image" content="images/profile.jpg"><link rel="icon" href="favicon.ico" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><!-- Google Analytics: replace G-XXXXXXXXXX with your real GA4 Measurement ID from analytics.google.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script></head><body>
+<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a class="active" href="projects.html">Projects</a><a href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a><button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light/dark theme">🌙</button></nav></div></header>
 <main><section class="page-hero"><div class="container"><p class="kicker">Profile</p><h1>My projects.</h1><p>A collection of websites, system experiments, servers, and other things I've built or tested.</p></div></section>
 <section class="content-section"><div class="container"><div class="project-grid">
 <a class="card project-large" href="project-profile.html"><div class="card-media"><img src="images/project-portfolio.jpg" alt="Profile website"><span class="badge">Web</span></div><div class="card-body"><h3>Personal Profile Website</h3><p>HTML, CSS and JavaScript profile UI with responsive design.</p></div></a>
@@ -8,20 +10,5 @@
 <a class="card project-large" href="project-android.html"><div class="card-media"><img src="images/project-android.jpg" alt="Android Experiments"><span class="badge">Android</span></div><div class="card-body"><h3>Android Experiments</h3><p>Launcher tuning, Android customization and mobile testing.</p></div></a>
 <a class="card project-large" href="project-dualboot.html"><div class="card-media"><img src="images/project-dualboot.jpg" alt="Dual Boot Setup"><span class="badge">Systems</span></div><div class="card-body"><h3>Dual Boot Setup</h3><p>Windows and Linux partitioning experiments.</p></div></a>
 </div></div></section></main>
-<footer id="contact"><div class="container"><h2>Zidan</h2><p>More projects coming as I build them.</p><p>GitHub: github.com/zidan</p><p>© Zidan</p></div></footer><script>window.addEventListener('scroll',()=>document.getElementById('topbar').classList.toggle('scrolled',scrollY>30));</script><script>
-(function(){
-  document.body.classList.add('page-ready');
-  document.querySelectorAll('a[href]').forEach(function(a){
-    var href=a.getAttribute('href');
-    if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || a.target==='_blank') return;
-    a.addEventListener('click',function(e){
-      if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey) return;
-      e.preventDefault();
-      document.body.classList.remove('page-ready');
-      document.body.classList.add('page-exit');
-      setTimeout(function(){ window.location.href=href; },380);
-    });
-  });
-})();
-</script>
-</body></html>
+<footer id="contact"><div class="container"><h2>Zidan</h2><p>More projects coming as I build them.</p><p>GitHub: github.com/zidan</p><p>© Zidan</p></div></footer>
+<script src="assets/main.js" defer></script></body></html>

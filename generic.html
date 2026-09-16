@@ -1,21 +1,8 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About — Zidan</title><link rel="stylesheet" href="assets/css/main.css"></head><body>
-<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a class="active" href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a></nav></div></header>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About — Zidan</title><link rel="stylesheet" href="assets/css/main.css"><meta name="description" content="About Zidan — a student who likes computers, coding, Linux, web design and figuring things out by building."><meta property="og:type" content="website"><meta property="og:title" content="About — Zidan"><meta property="og:description" content="About Zidan — a student who likes computers, coding, Linux, web design and figuring things out by building."><meta property="og:image" content="images/profile.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="About — Zidan"><meta name="twitter:description" content="About Zidan — a student who likes computers, coding, Linux, web design and figuring things out by building."><meta name="twitter:image" content="images/profile.jpg"><link rel="icon" href="favicon.ico" sizes="any"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="icon" type="image/png" sizes="192x192" href="icon-192.png"><!-- Google Analytics: replace G-XXXXXXXXXX with your real GA4 Measurement ID from analytics.google.com -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script></head><body>
+<header id="topbar"><div class="container nav"><nav><a href="index.html">Home</a><a href="projects.html">Projects</a><a class="active" href="generic.html">About</a><a href="elements.html">Skills</a><a href="index.html#contact">Contact</a><button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle light/dark theme">🌙</button></nav></div></header>
 <main><section class="page-hero"><div class="container"><p class="kicker">About Me</p><h1>Behind the screen.</h1><p>I'm Zidan, a student and technology enthusiast. I learn mostly by building, experimenting, troubleshooting, and occasionally wondering why the computer chose violence.</p></div></section>
 <section class="content-section"><div class="container"><div class="split"><div class="panel"><h2>What I Do</h2><p>I explore web development, programming, Linux, computer systems and game-related projects. I like taking an idea and turning it into something I can actually run.</p><div class="skill-list"><span class="skill">Web Development</span><span class="skill">Programming</span><span class="skill">Linux</span><span class="skill">Windows</span><span class="skill">Gaming</span></div></div><div class="panel"><h2>How I Learn</h2><ul class="list"><li>Build small projects.</li><li>Test things myself.</li><li>Read documentation when stuck.</li><li>Troubleshoot instead of giving up.</li><li>Repeat until it works.</li></ul></div></div></div></section></main>
-<footer id="contact"><div class="container"><h2>Contact</h2><p>Zidan · Indonesia</p><p>GitHub: github.com/zidan</p><p>Instagram: @yourusername</p></div></footer><script>window.addEventListener('scroll',()=>document.getElementById('topbar').classList.toggle('scrolled',scrollY>30));</script><script>
-(function(){
-  document.body.classList.add('page-ready');
-  document.querySelectorAll('a[href]').forEach(function(a){
-    var href=a.getAttribute('href');
-    if(!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('tel:') || a.target==='_blank') return;
-    a.addEventListener('click',function(e){
-      if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey) return;
-      e.preventDefault();
-      document.body.classList.remove('page-ready');
-      document.body.classList.add('page-exit');
-      setTimeout(function(){ window.location.href=href; },380);
-    });
-  });
-})();
-</script>
-</body></html>
+<footer id="contact"><div class="container"><h2>Contact</h2><p>Zidan · Indonesia</p><p>GitHub: github.com/zidan</p></div></footer>
+<script src="assets/main.js" defer></script></body></html>
