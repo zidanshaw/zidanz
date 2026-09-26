@@ -1,0 +1,47 @@
+[
+  {
+    "id": "profile",
+    "number": "01",
+    "title": "Personal Profile Website",
+    "description": "HTML, CSS and JavaScript profile UI with responsive design.",
+    "category": "Web",
+    "href": "project-profile.html",
+    "image": "images/project-portfolio.jpg"
+  },
+  {
+    "id": "linux",
+    "number": "02",
+    "title": "Linux Experiments",
+    "description": "Distribution testing, terminal work, configuration and system setup.",
+    "category": "Linux",
+    "href": "project-linux.html",
+    "image": "images/project-linux.jpg"
+  },
+  {
+    "id": "minecraft",
+    "number": "03",
+    "title": "Minecraft Server",
+    "description": "PaperMC, Java, networking and self-hosting experiments.",
+    "category": "Gaming",
+    "href": "project-minecraft.html",
+    "image": "images/project-minecraft.jpg"
+  },
+  {
+    "id": "android",
+    "number": "04",
+    "title": "Android Experiments",
+    "description": "Launcher tuning, Android customization and mobile testing.",
+    "category": "Android",
+    "href": "project-android.html",
+    "image": "images/project-android.jpg"
+  },
+  {
+    "id": "dualboot",
+    "number": "05",
+    "title": "Dual Boot Setup",
+    "description": "Windows and Linux partitioning experiments.",
+    "category": "Systems",
+    "href": "project-dualboot.html",
+    "image": "images/project-dualboot.jpg"
+  }
+]

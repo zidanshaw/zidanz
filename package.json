@@ -1,0 +1,14 @@
+{
+  "name": "zidan-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Zidan's portfolio with a typed frontend and optional FastAPI backend.",
+  "scripts": {
+    "build": "tsc",
+    "check": "tsc --noEmit",
+    "validate": "node scripts/validate.mjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
